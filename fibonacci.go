@@ -8,26 +8,15 @@ import (
 )
 
 func fibonacci(nr int) (res []int, err error) {
-  //var n = nr
-  //fib := [n]int
-  //var fib []int = make([]int, nr)
   result := []int{1}
 
   if err != nil {
     fmt.Println("there was an error in the fibonacci function")
-  } else { //does this need to be printed on the same line?
-    // result := []int{1}
+  } else {
     for i := 0; i <= nr; i++ {
-      //fmt.Printf(i, "\n")
       result = []int{i} // use := instead of var in the beginning
     }
   }
-
-  // result := []int{1}
-  // for i := 0; i < nr; i++ {
-  //   //fmt.Printf(i, "\n")
-  //   result = []int{i} // use := instead of var in the beginning
-  // }
 
   return result, err
 }
@@ -41,25 +30,11 @@ func fibonacciRecursive(nr int, i int, sequence []int) (res []int, err error) {
     //
     // n := 0
     index := i
-    //fmt.Println("index before for loop=", index)
-    //fmt.Println("nr =", f)
     for index <= nr {
-      //if f < 3 { break }
-      //fmt.Println("index =", index)
-      // for n <= nr {
-      //   fmt.Println(n, ",")
-      // }
-      //f += index
       if f > nr-1 {
         fmt.Println("f =", f, "-> break")
         break
-      }
-      // if index > 3 {
-      //   fmt.Println("index: break")
-      //   break
-      // }
-      //var length = nr
-      //sequence := make([]int, nr)
+
       if f == 0 {
         sequence[f] = 0
       } else if f == 1 {
@@ -102,16 +77,4 @@ func main() {
       i += 1
     }
   }
-
-  //FOR THE INITIAL FUNCTION
-  // fmt.Println("the numbers: ")
-  // result, err := fibonacci(4)
-  //
-  // if err != nil {
-  //   fmt.Println("there was an error in the main function")
-  // } else {
-  //   for i := range result { //range: extension
-  //   fmt.Println(result[i])
-  //   }
-  // }
 }

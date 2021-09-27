@@ -37,7 +37,6 @@ func FibonacciEquals(val1 int, val2 []int) bool {
 func TestFibonacci(t *testing.T) { //the method name start must be capital letter
 
   //value, err := fibonacci(1)
-
   // if err != nil {
   //   t.Fatalf("error in Fibonacci calculation")
   // }
