@@ -87,7 +87,7 @@ func fibonacciRecursive(nr int, i int, sequence []int) (res []int, err error) {
 func main() {
 
   nr := 3
-  seq := make([]int, nr)
+  seq := make([]int, nr) //this is how to initialize an array of length nr
   fib, err := fibonacciRecursive(nr, 0, seq)
 
   if err != nil {
